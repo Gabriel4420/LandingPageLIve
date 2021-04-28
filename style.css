@@ -1,0 +1,251 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cabin&display=swap");
+
+main {
+  display: block;
+}
+
+body {
+  overflow-x: hidden;
+}
+.banner {
+  background-image: linear-gradient(
+      rgba(0, 0, 0, 0.548),
+      rgba(31, 30, 30, 0.603)
+    ),
+    url("https://github.com/Gabriel4420/landingpage/blob/master/src/assets/banner_section.jpg?raw=true");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: white;
+
+  width: 100%;
+  height: 600px;
+}
+#title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 25%;
+  font-family: "Anton", sans-serif;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.banner h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Cabin", sans-serif;
+  font-size: 30px;
+}
+
+@media screen and (max-width: 500px) {
+  .banner {
+    background-size: 420px;
+    height: 30vh;
+  }
+
+  .banner h2,
+  #title {
+    font-size: 13px;
+  }
+  #title {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 12%;
+  }
+  .container .left {
+    height: 100px;
+  }
+
+  .tenis .left1 {
+    font-size: 12px;
+  }
+
+  .tenis .right1 {
+    background-size: contain !important;
+  }
+
+  .tenis {
+    height: 200px !important;
+  }
+
+  section h2#txt_1 {
+    color: rgb(151, 10, 151);
+    text-align: center;
+
+    font-family: "Anton", sans-serif;
+    font-size: 20px;
+  }
+
+  section .container .all,
+section .container .last {
+ 
+  margin-left:5%;
+  margin-top: 25% !important;
+  
+}
+
+section .container{
+  margin-top: 30%;
+}
+
+
+
+}
+
+.container {
+  display: flex;
+  height: 100px;
+  width: 100%;
+}
+
+.left {
+  height: inherit;
+  flex: 1;
+  background-image: url("https://i.pinimg.com/originals/33/b8/69/33b869f90619e81763dbf1fccc896d8d.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 130px;
+  width: 100%;
+}
+
+.right {
+  flex: 0.5;
+
+  height: inherit;
+}
+
+.insta,
+.face,
+.twit {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  height: 50px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.insta {
+  right: 60px;
+  top: 40px;
+  background-image: url("https://image.flaticon.com/icons/png/512/87/87390.png");
+}
+.face {
+  left: 10px;
+  top: -10px;
+  background-image: url("https://github.com/Gabriel4420/landingpage/blob/master/src/assets/facebook.png?raw=true");
+}
+.twit {
+  left: 80px;
+  top: -60px;
+  background-image: url("https://gabriel4420.github.io/landingpage/src/assets/twitter.png");
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  background-image: linear-gradient(rgb(87, 13, 87), rgb(179, 54, 74));
+}
+
+::-webkit-scrollbar-thumb {
+  width: 10px;
+  background-color: linear-gradient(rgb(32, 9, 32), rgb(121, 14, 32));
+}
+.tenis {
+  display: flex;
+  margin-top: 5px;
+  height: 300px;
+  background-image: radial-gradient(purple, rgb(47, 11, 63));
+}
+
+.tenis .left1 {
+  flex: 0.7;
+  color: white;
+  font-family: "Anton", sans-serif;
+  padding: 15px;
+}
+
+.tenis .right1 {
+  flex: 1;
+  background-image: url("https://raw.githubusercontent.com/Gabriel4420/landingpage/master/src/assets/vitrine.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* SECTION */
+
+section .button {
+  text-align: center;
+  margin-top: 250px;
+}
+
+section .button a {
+  padding: 15px;
+  text-decoration: none;
+  border: 3px solid rgb(47, 1, 47);
+  color: rgb(47, 1, 47);
+  background-color: transparent;
+  font-size: 20px;
+  font-family: "Anton", sans-serif;
+}
+
+section .button a:hover {
+  text-decoration: underline;
+  padding: 15px;
+  background-color: purple;
+  color: white;
+  font-size: 20px;
+  font-family: "Anton", sans-serif;
+  border: 3px solid rgb(47, 1, 47);
+}
+
+footer {
+  font-family: "Cabin", sans-serif;
+  color: rgb(47, 1, 47);
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 15px;
+}
+
+/* * Mosaic */
+
+section .container {
+  display: flex;
+  max-width: 300px;
+  /* Você pode trocar a largura aqui livremente */
+  margin-top: 30%;
+  margin-left: 15%;
+}
+
+section .container .all,
+section .container .last {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column nowrap;
+ 
+  margin-top: -25%;
+}
+
+.all,
+.last {
+  width: 100%;
+}
+
+section .all .image,
+section .last .image {
+  width: 100%;
+}
+
+section h2#txt_1 {
+  color: rgb(151, 10, 151);
+  text-align: center;
+
+  font-family: "Anton", sans-serif;
+  font-size: 40px;
+}
